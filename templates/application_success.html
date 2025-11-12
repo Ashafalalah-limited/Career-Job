@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Submitted</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        nav {
+            background-color: #2a9d8f;
+            padding: 15px 30px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .success-message {
+            text-align: center;
+        }
+
+        .success-message a {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .success-message a:hover {
+            background-color: #21867a;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/">🏠 Home</a>
+    <a href="/careerjob/apply/">Apply</a>
+    <span>Ashafalalah Limited</span>
+</nav>
+
+
+<div class="container success-message">
+    <h1>Thank You!</h1>
+    <p>Your application has been submitted successfully. We'll be in touch soon.</p>
+    <a href="{% url 'apply' %}">Submit another application</a>
+</div>
+
+
+<footer>
+    &copy; 2025 Ashafalalah Limited. All rights reserved.
+</footer>
+
+</body>
+</html>
