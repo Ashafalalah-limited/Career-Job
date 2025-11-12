@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: login-registration-app
+    name: Career job opportunity
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn myproject.wsgi
